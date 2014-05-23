@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin:0;
+    font-family:helvetica;
+}
+
+p {
+	font-size: 14px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------MENU-START--------------------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+	width: 100%;
+	background-color: #000;
+	height: auto;
+	position: fixed;
+	z-index: 1000;
+	padding-bottom: 17px;
+}
+
+
+
+
+nav{
+    margin-left:auto;
+    margin-right: auto;
+    text-align:center;
+	
+}
+
+
+.logo {
+	border:none;
+	border-width:0px;
+	margin-left: 0px;
+	}
+
+nav ul {
+    list-style:none;
+    padding-top:20px;
+    padding-left:0px;
+
+    margin:0;
+}
+
+nav ul li {
+    display:block;
+    float:left;
+    margin-left:40px;
+    font-size:18px;
+}
+
+nav ul li a {
+    color:#eaeaea;
+    text-decoration:none; 
+
+    /*SAFARI & CHROME TRANSITION*/
+    -webkit-transition: color 0.4s ease;  
+
+    /*FIREFOX TRANSITION*/
+
+	-moz-transition: color 0.4s ease;
+
+    /*OPERA TRANSITION*/
+
+	-o-transition: color 0.4s ease;
+
+    /*STANDARD TRANSITION*/
+
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+	color: #21bca1;
+	
+}
+
+.menuActif a {
+	color: #21bca1;
+	}
+
+.menuPosition {
+	margin-top:10px;
+	}
+	
+
+#sousMenu {
+	width:100%;
+	height:50px;
+	margin-top:16px;
+	position:fixed;
+	background-color:rgba(255,255,255,.70);
+	}
+	
+#sousMenu ul {
+    list-style:none;
+    padding-left:0px;
+    padding-right:0px;
+    margin:0;
+	padding:0;
+	padding-left: 0px;
+	padding-top:5px;
+
+	
+}
+
+#sousMenu ul li {
+    display:block;
+    float:left;
+    margin-left:0px;
+    margin-right: 35px;
+    font-size:14px;
+}
+
+#sousMenu ul li a {
+	color: #333;
+    text-decoration:none;
+   
+}
+
+
+#sousMenu ul li a:hover {
+
+	border-bottom: 2px dotted #21bca1;
+   
+}
+
+.sousmenuActif {
+	border-bottom: 2px dotted #21bca1;
+	}
+	
+	
+/*------------------------------------------------------------------------------------------------------------------------------------------------MENU-END--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.container_12 {
+	max-width: 1000px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------CONTENT-START--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*--------SLIDER - START----------------------------------------------------------------------------------------------------------------------------------------SLIDER-START--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;
+top:360px; position:absolute;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+/* Demo CSS - You do not need this css in your own slider */
+
+
+pre{
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: whiteSmoke;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+pre + h2{
+	margin-top: 80px;
+}
+
+#container{
+	max-width:620px;
+	margin:0 auto;
+	padding-bottom:80px;
+}
+
+#banner-fade,
+#banner-slide{
+	margin-bottom: 60px;
+}
+
+/*BOUTONS PREV ET NEXT*/
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background-color: rgba(255,255,255,0.30);
+	color:#000;
+	font-weight:bold;
+	text-decoration: none;
+
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background: rgba(0,0,0,0.30);
+	color:#fff;
+}
+
+/*boutons 123*/
+
+ol.bjqs-markers li a{
+	width:10px;
+	height:10px;
+	padding: 0px 0px;
+	background: rgba(255,255,255,1);
+	color: rgba(255,255,255,0);
+	margin:5px;
+	text-decoration: none;
+	border-radius:100px;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #e24143;
+	color: rgba(255,255,255,0);
+}
+
+/*BANDE CAPTION*/
+
+p.bjqs-caption{
+	background: rgba(0,0,0,0.70);
+	color:rgba(255,255,255,1)
+}
+
+
+
+/*--------SLIDER - END----------------------------------------------------------------------------------------------------------------------------------------SLIDER-END--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+#mainContent {
+	min-height:618px;
+	padding-top:120px;
+}
+
+/*BORDER-BOTTOM FOR THE BIBG TITLES AT THE TOP OF EACH PAGE*/
+.mainTitle {
+	border-bottom: thick solid;
+	}
+
+/*BORDER-BOTTOM TITLE FOT THE SUB TITLES*/
+.subTitle {
+	border-bottom: medium solid;
+}
+
+
+/*STYLE FOR LINK IN THE NEWS SECTION ON THE HOME PAGE TO ACCESS THE NEWS SECTION*/
+.readMore {
+	color: #e24143;
+	font-style: italic;
+	font-size: 12px;
+}
+
+
+/*STYLE FOR SOURCE OF THE TEXT */
+.source {
+	font-size: 14px;
+	font-style: italic;
+}
+
+/*STYLE THE H2 TITLES THAT ARE PINK*/
+.pinkTitle {
+	color: #e24143;
+}
+
+/*STYLE FOR DASHED BOTTOM BORDERS*/
+.dashedLine {
+	border-bottom: dashed;
+	border-bottom-width: thin;
+}
+
+/*STYLE FOR THE PARAGRAPHS WITH BIGGER FONT AND LINE HEIGHT*/
+
+.paraBig {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.pinkColor {
+	color: #e24143;
+}
+
+
+
+
+/*---HOME START---*/
+
+.dateStyle {
+	font-family: courier;
+}
+
+.eventStyle {
+	color: #e24143;
+}
+
+/*---HOME END---*/
+
+
+
+
+/*---ABOUT START---*/
+
+/*---OUR HISTORY START---*/
+
+
+.quote {
+	font-weight: bold;
+	font-style: italic;
+	color: #e24143;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.quoteLine {
+	border-bottom: thin solid;
+}
+
+
+/*---OUR HISTORY END---*/
+
+
+/*----TYPE CLUB STUDENT GROUP START----*/
+
+/*STYLE FOR THE CROP IMG DIV BORDER*/
+.typeImg1 {
+
+	float: left;
+	clear: left;
+	border-style: solid;
+	border-width: 4px;
+	margin-right: 80px;
+	margin-left: 40px;
+	position: relative;
+
+}
+
+.typeImg2 {
+
+
+	float: left;
+	border-style: solid;
+	border-width: 4px;
+	margin-right: 42px;
+	position: relative;
+
+}
+
+
+
+.boxHover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 215px;
+	background-color: #e24143;
+	opacity: 0;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 190px;
+
+}
+
+.typeImg1:hover .boxHover {
+	opacity: 0.90;
+
+
+
+}
+
+
+.typeImg2:hover .boxHover {
+	opacity: 0.90;
+
+
+
+}
+
+
+
+/*----TYPE CLUB STUDENT GROUP END----*/
+
+/*---ABOUT END---*/
+
+/*MEMBERSHIP SECTION*/
+
+.linkPink {
+	color: #000;
+}
+
+.linkPink:hover {
+	color: #e24143;
+}
+
+.nameLink {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.nameLink:hover {
+	color: #e24143;
+}
+
+
+/*JOIN OR RENEW SECTION*/
+
+.mainTitle h1 a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mainTitle h1 a:hover {
+	color: #e24143;
+}
+
+
+
+/*EVENTS*/
+
+#galImg {
+	position: relative;
+}
+
+.eventBoxHover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	width: 1000px;
+	height: 400px;
+	opacity:0;
+	color: #fff;
+}
+
+
+#galImg:hover .eventBoxHover {
+	opacity: 0.80;
+
+
+
+}
+
+.eventContent {
+	margin-left: 50px;
+}
+
+
+.eventContent p a {
+	color: #fff;
+}
+
+
+/*LOG IN*/
+
+fieldset {
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding: 50px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #000;
+}
+
+label {
+	font-size: 18px;
+}
+
+#userName input {
+	border-color: #888888;
+	border-width: 2px;
+	border-style: solid;
+	padding: 5px 0;
+}
+
+#password input {
+	border-color: #888888;
+	border-width: 2px;
+	border-style: solid;
+	padding: 5px 0;
+	margin-left: 14px;
+}
+
+#submit input {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e24143;
+	background-color: #e24143;
+	color: #fff;
+	padding: 8px 10px;
+	font-size: 13px;
+	margin-left: 110px;
+}
+
+label span {
+	color: #ff0000;
+}
+
+#registerLink {
+	margin-top: 20px;
+	width: 300px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#mainHeader {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------CONTENT-END--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------FOOTER-START--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+footer {
+    background-color:#21bca1;
+    height:100px;
+}
+
+.iconsPosition {
+	padding-top:25px;
+	padding-left:0px;
+	float:left;
+	}
+	
+
+.textFooter {
+	width:500px;
+	font-size:11px;
+	font-style: italic;
+	float:left;
+	padding-top:34px;
+	padding-left:50px;
+	}
+	
+	
+/*------------------------------------------------------------------------------------------------------------------------------------------------FOOTER-END--------------------------------------------------------------------------------------------------------------------------------------*/
+
+	
